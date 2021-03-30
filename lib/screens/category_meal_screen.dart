@@ -27,6 +27,7 @@ class CategoryMeals extends StatelessWidget {
         itemCount: catMeals.length,
         itemBuilder: (ctx, index) {
           return MealItem(
+              id: catMeals[index].id,
               title: catMeals[index].title,
               imageURL: catMeals[index].imageURL,
               duration: catMeals[index].duration,
